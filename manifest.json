@@ -1,12 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Search Extension",
+  "name": "Auto Collector Features",
   "version": "1.0",
-  "description": "Search in ChatGPT Extension",
-  "permissions": ["contextMenus", "activeTab", "storage", "http://*/*", "https://*/*"],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Displays buttons for auto collector and other features.",
+  "permissions": [],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -17,24 +14,7 @@
   },
   "icons": {
     "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
-    
-  },
-  "permissions": [
-    "activeTab",
-    "storage",
-    "http://*/*",
-    "https://*/*"
-  ],
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["https://chat.openai.com/"], 
-      "js": ["content.js"]
-    }
-  ]
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
 }
